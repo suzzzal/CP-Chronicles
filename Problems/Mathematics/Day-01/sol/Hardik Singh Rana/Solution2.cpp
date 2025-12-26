@@ -16,7 +16,14 @@ using namespace std;
 
 const ll MOD = 1e9+7;
 const ll INF = 1e18;
+/*
+We need to count the no of pairs such that their product makes some number's k-th power-this means the product of the two numbers should have
+factors frequency that is divisible by k. For every number first factorize it using spf(also store its factors mod k) and also store how much
+factor more it needs to make the k-th power add this for all numbers.
 
+*/
+
+/* Submission Link: https://codeforces.com/contest/1225/submission/355183203 */
 void solve() {
     int n,k;
     cin>>n>>k;
